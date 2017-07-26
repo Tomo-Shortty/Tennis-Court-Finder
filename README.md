@@ -1,2 +1,1 @@
-# Tennis-Court-Finder
-University project
+A web development project completed in 2015 with another student.
