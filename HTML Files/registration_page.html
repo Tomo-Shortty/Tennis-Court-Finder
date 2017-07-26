@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="this_website.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Javascript.js"></script>
+		<meta charset = "utf-8">
+		<title>Sign-in</title>
+	</head>
+	<body>
+		<div id="Header">
+			<h1>Tennis Court Finder</h1>
+		</div>
+		<div id="Wrapper">
+		<div id="Menu">
+			<a href="home_page.html">Home</a><a href="high_rated.html">Highest Rated Courts</a><a href="all_courts.html">All Courts</a><a href="review_page.html">Review a Court</a><a href="registration_page.html">Log Out</a>
+		</div>
+		<div id="Register">
+		<fieldset>
+		<h2>Don't have an account? Register here!</h2>
+		<form action="home_page.html" name="registerName" onsubmit="return passwordMatch(this);">
+			<p> Choose a username: </p>
+			<input type="text" name="usernamer">
+			<p> Choose a password: </p>
+			<input type="password" name="userpwr">
+			<p> Re-enter password: </p>
+			<input type="password" name="checkpwr">
+			<p></p>
+			<input type="submit" value="Create Account">
+		</form>
+		</fieldset>	
+		</div>
+		<div id="Sign-in">
+		<fieldset>
+		<h2>Please sign-in:</h2>
+		<form action="home_page.html" name="signIn" onsubmit="return signIn(this);">
+			<!-- Need to make code that checks username and password in database. -->
+			<p> Enter username: </p>
+			<input type="text" name="username">
+			<p> Enter password: </p>
+			<input type="password" name="userpw">
+			<p></p>
+			<input type="submit" value="Log In">
+		</form>
+		<br> <br>
+		<br> <br>
+		<br>
+		</fieldset>
+		</div>
+		</div>
+		<div id="Footer">
+			<p> CAB230 Web Computing </p>			
+			<p> Copyright 2015. Thomas Shortt n8854742, Samantha Adnett n8795797. </p>
+		</div>
+	</body>
+</html>

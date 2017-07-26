@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="this_website.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Javascript.js"></script>
+		<meta charset = "utf-8">
+		<title>Review</title>
+	</head>
+	<body>
+		<div id="Header">
+			<h1> Tennis Court Finder </h1>
+		</div>
+		<div id="Menu">
+			<a href="home_page.html">Home</a><a href="high_rated.html">Highest Rated Courts</a><a href="all_courts.html">All Courts</a><a href="review_page.html">Review a Court</a><a href="registration_page.html">Log Out</a>
+		</div>
+		<div id="Content">
+			<h1>Review a Court</h1>
+			<div id="ReviewQuestions">
+				<form action="review_page.html" method="POST" name="review">
+					<p> Select the court you would like to review: </p>
+					<select name="court">
+						<option value="Algester State School">Algester State School
+						</option>
+						<option value="Junction Park State School">Junction Park State School
+						</option>
+						<option value="Ascot State School">Ascot State School
+						</option>
+						<option value="Ashgrove State School">Ashgrove State School
+						</option>
+					</select>
+					<br>
+					<br>
+					<p> Please select the star rating:</p>
+					<input type="radio" name="stars" value="0star"> 0 star
+					<input type="radio" name="stars" value="1star"> 1 star
+					<input type="radio" name="stars" value="2star"> 2 star
+					<input type="radio" name="stars" value="3star"> 3 star
+					<input type="radio" name="stars" value="4star"> 4 star
+					<input type="radio" name="stars" value="5star"> 5 star
+					<br>
+					<br>
+					<p> Comments: </p>
+					<textarea id="CommentBox"></textarea>
+					<br>
+					<br>
+					<input type="submit" value="Submit Review">
+				</form>
+			</div>
+		</div>
+		<div id="Footer">
+			<p> CAB230 Web Computing </p>			
+			<p> Copyright 2015. Thomas Shortt n8854742, Samantha Adnett n8795797. </p>
+		</div>
+	</body>
+</html>

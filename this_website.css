@@ -1,0 +1,502 @@
+/* Common settings for entire website. */
+body {
+	background-color: white;
+	font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	min-width: 728px;
+	text-align: center;
+}
+
+/* Displays the heading on each page with large, white, 
+italic writing and a dark grey background*/
+#Header {
+	height: 70px;
+	font-style: italic;
+	font-size: 150%;
+	text-align: center;
+	background-color: #5B5C58; /* dark grey*/
+	color: white;
+}
+/* Ensures the menu only wraps around if it overlaps the sides of the screen. */
+#Menu {
+	width: 100%;
+}
+
+/* Sets the menu buttons to be displayed next to each other.
+Each button has bold, white writing with padding around it, a dark green 
+background and a white border. */
+#Menu a {
+	height: 30px;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #04613F; /* dark green */
+	color: white;
+	border-style: double;
+	border-width: 4px;
+	display: inline-block;
+	text-decoration: none; /* removes underline from text */
+}
+
+/* When the mouse is hovered over the button the colour of that button changes
+to a lighter green, and the button's text becomes underlined. */
+#Menu a:hover {
+	background-color: green;
+	text-decoration: underline;
+}
+
+/* Creates a space around the 'options' section. On the home page, this 
+creates a space between the drop-down box and the text above it. */
+#Options {
+	margin: 20px;
+}
+
+/* Sets the font-size for all drop-down boxes. */
+select {
+	font-size: 12pt;
+}
+
+/* Sets the size and position of the map */
+#Map {
+	width: 400px;
+	height: 300px;
+	margin-top: 20px;
+	margin-right: 60px;
+	float: right;
+}
+
+/* Ensures the content on the left of the homepage is not against the edge of the screen and that it does not take up more than half the width of the screen. */
+#LeftContent {
+	padding: 20px;
+	margin-left: 60px;
+	min-width: 700px;
+	max-width: 50%;
+	min-height: 400px;
+	float: left;
+}
+
+/* Give the heading a space around it and sets it to the same dark green. */
+#LeftContent h1 {
+	margin: 30px;
+	text-align: center;
+	color: #04613F; /* dark green */
+}
+
+/* Ensures the content on the right of the homepage is not against the edge of the screen and that it does not take up more than 40% the width of the screen. This allows for a gap between the RightContent and LeftContent. */
+#RightContent {
+	padding: 20px;
+	margin-right: 60px;
+	min-width: 700px;
+	max-width: 40%;
+	min-height: 400px;
+	float: right;
+}
+
+/* Ensures the table spreads across the entire screen but does not touch the edges of the screen. */
+#TableContent {
+	padding: 20px;
+	margin-left: 60px;
+	margin-right: 60px;
+	min-width: 700px;
+	max-width: 100%;
+	min-height: 400px; /* ensures the footer appears at the bottom of the page. */
+}
+
+/* Give the headings above the tables space around them and set them to the same dark green. */
+#TableContent h1 {
+	margin: 30px;
+	text-align: center;
+	color: #04613F; /* dark green */
+}
+
+/* Gives the image space around it and puts it in position. */
+#Image {
+	float: right;
+	margin-right: 80px;
+	margin-top: 100px;
+}
+
+/* Keeps the content away from the side of the screen yet ensures it does not go more than halfway across the screen to allow room for an image. */
+#CourtContent {
+	padding: 20px;
+	margin-left: 80px;
+	text-align: left;
+	width: 50%;
+	float: left;
+}
+
+/* Changes the colour of the heading to match the rest of the website. */
+#CourtContent h1 {
+	color: #04613F; /* dark green */
+}
+
+/* Changes the colour of the sub-headings to match the rest of the website. */
+#CourtContent h3 {
+	color: #04613F; /* dark green */
+}
+
+/* Places it on the left size of the screen without touching the edge. */
+#Left {
+	padding: 10px;
+	float:left;
+	width: 40%;
+}
+
+/* Change colour to match website */
+#Left h1 {
+	color: #04613F; /* dark green */
+}
+
+/* Ensures the select box size does not exceed the section it is in. */
+#Left select {
+	width: 100%;
+}
+
+/* Places it on the right size of the screen without touching the edge. */
+#Right {
+	padding: 10px;
+	float:right;
+	width: 40%;
+}
+
+/* Change colour to match website */
+#Right h1 {
+	color: #04613F; /* dark green */
+}
+
+/* Sets a height for the comment box and ensures it does not exceed the width of the area it is in. */
+#CommentBox{
+	width: 100%;
+	height: 150px;
+}
+
+/* All footers will have white writing on a grey background. */
+#Footer {
+	margin: 5px;
+	background-color: #5B5C58; /* dark grey */
+	text-align: center;
+	clear: both;
+	height: 70px;
+	color: white;
+}
+
+/* Sets the style for the sign-in section, only to cover the left side of the screen. */
+#Sign-in {
+	margin-left: 470px;
+	text-align: center;
+	width: 35%;
+	height: 720px;
+	float: left;
+}
+
+/* Sets the style of the error message underneath the sign in */
+#Sign-in span {
+	font-size: 10pt;
+	color: red;
+}
+
+/* Sets the style for the register section on the right side of the screen, to match the sign-in section. */
+#Register {
+	text-align: center;
+	width: 35%;
+	height: 720px; /* error message will be displayed below this */
+	float: right;
+	padding-right: 30px;
+}
+
+/* Sets the style of the error message underneath the 'Create Account' button */
+#Register span {
+	font-size: 10pt;
+	color: red;
+}
+
+/* Creates a fixed height and width of the boxes around register and sign-in sections. */
+fieldset {
+	width: 400px;
+	height: 700px;
+}
+
+/* Sets up table display */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Sets up the body of the table */
+td {
+	height: 40px;
+	min-width: 100px;
+	text-align: left;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+/* Sets the style of the table headings. White writing on a dark green background. */
+th {
+	height: 20px;
+	background-color: #04613F; /* dark green */
+	color: white;
+	border: 1px solid black;
+}
+
+
+
+
+/* Adjusts settings for a screen width less than 1600px. */
+@media screen and (max-width: 1600px) {
+	/* Adjusts the placement */
+	#Sign-in {
+		margin-left: 100px;
+		height: 400px;
+	}
+
+	/* Adjusts the placement */
+	#Register {
+		height: 530px;  /* error message will be displayed below this */
+	}
+	
+	/*Changes the fixed height and width of the boxes around register and sign-in sections. */
+	fieldset {
+		width: 380px;
+		height: 510px;
+	}
+}
+
+
+
+/* Adjusts settings for a screen width less than 1300px. */
+@media screen and (max-width: 1300px) {
+	/* Removes the margin and allows the map to centre itself. */
+	#Map {
+		float: none;
+		margin-right: 0px;
+	}
+	
+	/* Allows the content on the homepage to centre itself. */
+	#LeftContent {
+		float: none;
+		height:200px;
+		max-width: 100%;
+		min-height: 300px;
+		margin-left: 0px;
+	}
+	
+	/* Allows the right content to drop below the left content and centre itself. */
+	#RightContent {
+		float: none;
+		height:250px;
+		max-width: 100%;
+		min-height: 300px;
+		margin-right: 0px;
+	}
+	
+	/* Ensures that the tables adjust appropriately for a smaller screen size. */
+	#TableContent {
+		margin-left: 20px;
+		margin-right: 20px;
+		min-width: 500px;
+	}
+	
+	/* Shrinks the margin as the right content moves closer. */
+	#Sign-in {
+		margin-left: 60px;
+	}
+}
+
+/* Adjusts settings for a screen width less than 1000px. */
+@media screen and (max-width: 1000px) {
+	/* Shifts the content left to allow more room for the image. */
+	#CourtContent {
+		margin-left: 20px;
+	}
+	
+	/* Stops the image from changing it's location when the screen is adjusted. */
+	#Image {
+		margin-right: 50px;
+	}
+	
+	/* Adjustments to fit right content on the screen. */ 
+	#Sign-in {
+		margin-left: 10px;
+		width: 25%;
+	}
+	
+	/* Allows more room for this content */
+	#Register {
+		width:50%;
+	}
+	
+	/* This size, the page will be full so allow auto fitting. */
+	fieldset{
+		width: auto;
+	}
+}	
+
+/* Adjusts settings for a screen width less than 480px. (mobile phone standard) */
+@media screen and (max-width: 480px) {
+	/* Website's minimum width for display. */
+	body {
+		min-width: 300px;
+	}
+	
+	/* Shrinks the header */
+	#Header{
+		height: 38px;
+		font-size: 80%;
+	}
+	
+	/* Makes the menu buttons smaller, yet still big enough to read. */
+	#Menu a {
+		height: 16px;
+		padding: 3px;
+		font-size: 8pt;
+		border-width: 3px;
+	}
+	
+	/* Adjusts the map-size to fit the screen */
+	#Map {
+		width: 200px;
+		height: auto;
+		margin: 5px;
+	}
+	
+	/* Shrinks the content on the homepage. */
+	#LeftContent {
+		zoom: 0.45;
+		-moz-transform: scale(0.45);
+		font-size: 18pt;
+		height: 480px;
+	}	
+	
+	/*Enlarges the font. */
+	#Options input  {
+		font-size: 18pt;
+	}
+	/*Enlarges the button. */
+	#Options  button {
+		font-size: 18pt;
+	}
+	/*Enlarges the select box. */
+	#LeftContent select {
+		font-size: 18pt;
+	}
+	
+	/* Shrinks the font-size in all drop-down boxes. */
+	select {
+		font-size: 8pt;
+	}
+	
+	/* Puts the contents on the page vertical instead of next to each other. */
+	#Left {
+		float:none;
+		width: 90%;
+	}
+	
+	#Right {
+		float:none;
+		width: 90%;
+	}
+	
+	/* Decreases the size of the headings to suit the screen size. */
+	#Left h1 {
+		font-size: 100%;
+	}
+	
+	#Right h1 {
+		font-size: 100%;
+	}
+	
+	/* Shrinks the font in the review table */
+	#ReviewTable {
+		font-size: 10pt;
+	}
+	
+	/* Shrinks the table */
+	td {
+		min-width: 30px;
+		padding: 2px;
+		height: 30px;
+	}
+	
+	/* Ensures that the tables adjust appropriately for a smaller screen size. */	
+	#TableContent {
+		min-width: 300px;
+		max-width: 460px;
+		font-size: 8pt;
+		min-height: 50px;
+		margin-left: 0px;
+	}
+	
+	/* Adjusts the heading size */
+	#TableContent h1 {
+		margin: 0px;
+		font-size: 12pt;
+	}
+	
+	/* Adjust the size of the register section */
+	#Register {
+		max-width: 50%;
+		font-size: 80%;
+		height: auto;
+		margin-left: 50px;
+	}
+	
+	/* Adjusts size of select box */
+	#Register select {
+		font-size: 12px;
+	}
+	
+	/* Adjust the size of the sign-in section */
+	#Sign-in {
+		max-width: 50%;
+		font-size: 80%;
+		height: auto;
+		margin: 0px;
+		margin-left: 50px;
+	}
+	
+	/* Shrinks the size of error message. */
+	#Sign-in span {
+		font-size: 8pt;
+	}
+	
+	/* Displays the register and sign-in sections vertically instead of nex to each other. */
+	#Register {
+		float: none;
+		height: 530px; /* Ensures no overlapping */
+	}
+	
+	#Sign-in {
+		float: none;
+		height: 320px; /* Ensures no overlapping */
+	}
+
+	/* No border is displayed around the fields when they are vertical. */
+	fieldset {
+		height: 0px;
+		border: none;
+	}
+	
+	/* Changes the size of the footer proportionally. */
+	#Footer {
+		margin: 0px;
+		height: 38px;
+		font-size: 6pt;
+	}
+	
+	/* Shrinks section, yet increases the font-size ratio */
+	#CourtContent {
+		zoom: 0.45;
+		-moz-transform: scale(0.45);
+		font-size: 18pt;
+		height: 0px;
+		width: 90%;
+	}
+	
+	/* Hides the image*/
+	#Image {
+		visibility: hidden;
+	}
+}

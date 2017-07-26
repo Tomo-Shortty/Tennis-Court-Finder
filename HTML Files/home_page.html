@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="this_website.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Javascript.js"></script>
+		<meta charset = "UTF-8">
+		<title>Home</title>
+	</head>
+	<body>
+		<div id="Header">
+			<h1> Tennis Court Finder </h1>
+		</div>
+		<div id="Menu" onload="loggedIn();">
+			<a href="home_page.html">Home</a><a href="high_rated.html">Highest Rated Courts</a><a href="all_courts.html">All Courts</a><a href="review_page.html">Review a Court</a><a id="log" href="registration_page.html">Log Out</a>
+			<!--
+			
+			Need to make a search menu
+			
+			-->
+			
+		</div>
+		
+		<div id="Content">
+			<h1> Welcome to the Tennis Court Finder! </h1>
+			<p> Select your suburb to get started! Or use the links above to navigate the page. </p>
+			
+			<div id="Options">
+				<form action="results_page.html" method="GET/POST" name="locationForm" onsubmit="closeCourts()">
+					<select id="suburb">
+						<option value="Algester">Algester
+						</option>
+						<option value="Annerley">Annerley
+						</option>
+						<option value="Ascot">Ascot
+						</option>
+						<option value="Ashgrove">Ashgrove
+						</option>
+					</select>
+					<br><br>
+					<input type="submit" value="Find nearest courts.">
+				</form>
+			
+				<p><button onclick="getLocation()">Get location!</button></p>
+				<p id="status"> </p>
+				<!-- <a onclick="document.write(getLocation()); return false;" href="#">Get Geological Location</a> -->
+	
+			</div>
+		</div>
+		<div id="Map">
+			<iframe src="http://maps.google.com.au/maps?q=qut+gardens+point+campus&output=embed"></iframe>
+		</div>
+		
+		<div id="Footer">
+			<p> CAB230 Web Computing </p>			
+			<p> Copyright 2015. Thomas Shortt n8854742, Samantha Adnett n8795797. </p>
+		</div>
+	</body>
+</html>
